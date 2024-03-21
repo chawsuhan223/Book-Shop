@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom BookShop</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+    
+    <div class="w-screen h-screen bg-purple-700 flex justify-center items-center">
+        <form class="p-10 bg-white rounded-lg drop-shadow-lg space-y-4" action="">
+            <h1 class="text-xl font-light text-red-900 font-bold">Order Comfirmed</h1>
+    
+          
+            <div class="flex flex-col">
+                <label for="name" class="text-red-900 font-bold text-lg">Name</label>
+                <input type="text" name="name" id="name" class="peer border border-slate-400">
+    
+               
+            </div>
+    
+    
+            <div class="flex flex-col">
+                <label for="email"  class="text-red-900 font-bold text-lg">Email</label>
+                <input type="email" name="email" id="email"  class="peer border-2 border-zinc-900">
+               
+            </div>
+
+            <div class="flex flex-col">
+                <label for="message"  class="text-red-900 font-bold text-lg">Address</label>
+                <textarea name="message" id="message" cols="30" rows="3" 
+                    class="peer border border-black-900"></textarea>
+                
+            </div> <br>
+        <a href="./home.html"><p type="submit" class="px-5 py-1  text-red-900 font-bold text-lg border-2 border-zinc-900 w-20">Comfirm</p></a> <br>
+        <a href="./home.html"><p type="submit" class="px-5 py-1  text-red-900 font-bold text-lg border-2 border-zinc-900 w-20">Cancel</p></a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom BookShop</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+    <header class="w-full h-16 bg-blue-500 drop-shadow-lg">
+        <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+            <a class="text-yellow-400 text-2xl font-bold italic" href="">Wisdom<span
+                class="text-white">BookShop</span></a>
+
+
+            <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+
+                <li class="md:hidden z-90 fixed top-4 right-6 ">
+                    <a href="javascript:void(0)" class="text-right text-white text-4xl"
+                        onclick="toggleMenu()">&times;</a>
+                </li>
+
+                <a href="./home.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Home</li></a>
+                <a href="./Education.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Education</li></a>
+                <a href="./Health.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Health</li></a>
+                <a href="./Cartoon.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Cartoon</li></a>
+                <a href="./General.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">General</li></a>
+                <a href="./Feedback.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Feedback</li></a>
+                
+                
+                
+            </ul>
+
+          
+            <div class="flex items-center md:hidden ">
+                <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+                    onclick="toggleMenu()">
+                    &#9776;
+                </button>
+            </div>
+
+    </header>
+    <div class="py-10 px-5 md:px-0">
+        <div class="container mx-auto ">
+            <div class="lg:w-10/12 md:11/12 w-full mx-auto ">
+                <h2 class="font-bold text-2xl pb-10">My Gallery</h2>
+                <div class="flex w-1/4 ">
+                    <img  src="./img/lastest1.jpg" alt=""  >
+                    <img src="./img/lastest2.jpg" alt=""  >
+                    <img src="./img/lastest3.jpg" alt=""  >
+                    <img src="./img/lastest4.jpg" alt="" >
+                    
+                </div>
+                <div class="flex w-1/4 pt-12">
+                    <img src="./img/lastest5.jpg" alt="" >
+                    <img src="./img/lastest6.jpg" alt="">
+                    <img src="./img/lastest7.jpg" alt="">
+                    <img src="./img/lastest8.jpg" alt="">
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+        <form action="" class="text-xl text-red-600 ml-12 bg-gray-200">
+            <input type="checkbox" >သိုးကျောင်းသားနှင့်ဖိုဝိဇ္ဇာ <br> Ks 2,700<br>
+            <input type="checkbox">အတွေးအမြင် ဆောင်းပါးများ<br> Ks 1,800 <br>
+            <input type="checkbox" >လူမျိုးလည်းပြုန်း တိုင်းပြည်လည်းဆုံး<br> Ks 5,000<br>
+            <input type="checkbox" >လက်သီးဆုပ်ကိုဖြေလိုက်ပါ<br>Ks 2,000 <br>
+            <input type="checkbox" >တပင်ရွှေထီး ဝတ္ထုတော်ကြီး<br>Ks 7,500 <br>
+            <input type="checkbox" >အစားအစာနှင့် အာဟာရ<br> Ks 1,200<br>
+            <input type="checkbox" >ဆာဟာရနေ့ရက်များ<br> Ks 5,000<br>
+            <input type="checkbox" >ပါရီကျဆုံးခန်း The Fall of Paris<br> Ks 15,000<br>
+        </form>
+   
+  <a href="./order.html">  
+    <button onclick="buttonHandler()" title="Contact Sale"
+        class="fixed z-90  bottom-3/4  top-1/3 mt-12 md:right-8  bg-blue-400 md:w-24 sm:w-8 h-9  drop-shadow-lg flex justify-center items-center text-w text-xl hover:bg-blue-600 hover:drop-shadow-2xl hover:animate-bounce duration-300  md:ml-0 ml-64   mx-auto"  >Order</button></a>
+        <div class="py-10  px-5 md:px-0 bg-gray-500 mt-12">
+            <div class="container mx-auto">
+                <div class="lg:w-10/12  md:11/12 w-full mx-auto">
+                    <div class="md:flex block">
+                        <div class="flex-grow">
+                            <p class="font-bold text-white-500 ">You can order from Online</p>
+                            <input type="radio" name="order"class=" font-bold text-white-600">Cash on Delivery <br>
+                            <input type="radio" name="order"class=" font-bold text-white-600">Payment Delivery <br>
+                            <p class="font-bold text-white-500 mt-5">Shop Location:</p>
+                            <p class="font-bold text-white-500 ">Between 69*70th Sts</p>
+                            <p class="font-bold text-white-500 ">Between 40*41th Sts</p>
+                            <p class="font-bold text-white-500 ">Mahar Aung Myay Township</p>
+                            <p class="font-bold text-white-500 ">Open:9AM to 9PM</p>
+                            
+                            
+                        </div>
+                        
+                        <div class="block">
+                            <p class="mt-5 font-bold text-white-500">You can connect me</p>
+                        <a class="underline underline-offset-0 text-white-900 font-bold" href="">Facebook</a> <br>
+                        <a class="underline underline-offset-0 text-white-900 font-bold" href="">Instragram</a> <br>
+                        <a class="underline underline-offset-0 text-white-900 font-bold" href="">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="./jquery.js"></script>
+    <script src="./lastest.js"></script>
+</body>
+</html>

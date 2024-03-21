@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom BookShop</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+    <header class="w-full h-16 bg-blue-500 drop-shadow-lg">
+        <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+            <a class="text-yellow-400 text-2xl font-bold italic" href="">Wisdom<span
+                    class="text-white">BookShop</span></a>
+
+            <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+
+                <li class="md:hidden z-90 fixed top-4 right-6 ">
+                    <a href="javascript:void(0)" class="text-right text-white text-4xl"
+                        onclick="toggleMenu()">&times;</a>
+                </li>
+                <a href="./home.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Home</li></a>
+                <a href="./lastest.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Lastest</li></a>
+                <a href="./Education.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Education</li></a>
+                <a href="./Health.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Health</li></a>
+                <a href="./Cartoon.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Cartoon</li></a>
+                <a href="./General.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Feedback</li></a>
+                
+            </ul>
+
+          
+            <div class="flex items-center md:hidden ">
+                <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+                    onclick="toggleMenu()">
+                    &#9776;
+                </button>
+            </div>
+        </header>
+        <body class="bg-blue-400">
+            <div class="p-5 bg-amber-200">
+                <h1 class="mb-3 text-4xl font-light">Wisdom BookShop</h1>
+        
+                <p>Wisdom BookShopကို Member ဝင်တဲ့အတွက် ကျေးဇူးအထူးတင်ရှိပါတယ်ရှင့်
+                    Member ဝင်ရင် ရနိုင်မယ့်အကျိုးကျေးဇူးတွေကတော့
+        
+            <span id="dots">...</span>
+                    
+                    <span id="more" class="hidden"> 1လတစ်ခါ Member Cardပြရုံနဲ့ 10% Discount ရရှိနိုင်မှာဖြစ်ပါတယ်ရှင့် ဒါ့အပြင် နေ့ထူးနေ့မြတ်တွေမှာလည်း Delivery Freeရရှိဦးမှာ ဖြစ်ပါတယ်ရှင့် 50000ဖိုးအထက် ဝယ်ယူတဲ့ Customer များအတွက်လည်း စာအုပ် တစ်အုပ် အပိုလက်ဆောင်ရရှိဦးမှာဖြစ်ပါတယ်ရှင့်  
+                        ကျေးဇူးအများကြီးတင်ပါတယ်
+                       <!-- <h1 class="text-4xl"> Wisdom BookShop</h1> -->
+                        <span>
+                        </p>
+                        <h1 class="text-4xl ml-96 mt-12"> Wisdom BookShop</h1>
+        
+              
+                <button onclick="toggleText()" id="button"
+                    class="mt-3 px-5 py-2 bg-rose-500 text-white duration-300 hover:bg-rose-700">Read
+                    more</button>
+            </div>
+        
+        <script src="./jquery.js"></script>
+        <script src="./Member.js"></script>
+    </body>
+    </html>

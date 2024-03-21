@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom BookShop</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+    <header class="w-full h-16 bg-blue-500 drop-shadow-lg">
+        <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+            <a class="text-yellow-400 text-2xl font-bold italic" href="">Wisdom<span
+                    class="text-white">BookShop</span></a>
+
+            <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+
+                <li class="md:hidden z-90 fixed top-4 right-6 ">
+                    <a href="javascript:void(0)" class="text-right text-white text-4xl"
+                        onclick="toggleMenu()">&times;</a>
+                </li>
+
+                <a href="./home.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Home</li></a>
+                <a href="./lastest.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Lastest</li></a>
+                <a href="./Education.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Education</li></a>
+                <a href="./Cartoon.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Cartoon</li></a>
+                <a href="./General.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">General</li></a>
+                <a href="./Feedback.html"><li class="text-white text-xl opacity-70 hover:opacity-100 duration-300 mr-2">Feedback</li></a>
+            </ul>
+
+          
+            <div class="flex items-center md:hidden ">
+                <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+                    onclick="toggleMenu()">
+                    &#9776;
+                </button>
+            </div>
+
+    </header>
+    <div class="px-10 py-20 ">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10">
+            
+            <a href="./img/health1.jpg" 
+                class="flex flex-col bg-white drop-shadow  hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md  group relative w-80 h-64">
+                <img src="./img/health1.jpg" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md ">
+    
+                <div class=" absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold ">အဖြေရှာရခက်တဲ့ပုစ္ဆာ</h1>
+                    <p  class=" mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks 4,000</p>
+                </div>
+            </a>
+    
+            
+            <a href="./img/health2.png"
+                class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md group relative w-80 h-64">
+                <img src="./img/health2.png" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md">
+    
+                <div class="absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold">အော်တစ်ဇင်</h1>
+                    <p class="mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks 3,000</p>
+                </div>
+            </a>
+    
+            
+            <a href="./img/health3.png"
+                class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md group relative w-80 h-64">
+                <img src="./img/health3.png" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md">
+    
+                <div class="absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold">ကိုယ်စိတ်ကျန်းမာသင့်ခန္ဓာ</h1>
+                    <p class="mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks 4,500</p>
+                </div>
+            </a>
+    
+           
+            <a href="./img/health4.webp"
+                class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md group relative w-80 h-64">
+                <img src="./img/health4.webp" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md">
+    
+                <div class="absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold">ဆယ်ကျော်သက်တို့အကြောင်း</h1>
+                    <p class="mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks 1,200</p>
+                </div>
+            </a>
+    
+            <a href="./img/health5.png"
+                class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md group relative w-80 h-64">
+                <img src="./img/health5.png" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md">
+    
+                <div class="absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold">အဖြစ်များသော ကင်ဆာရောဂါများ</h1>
+                    <p class="mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks 2,000</p>
+                </div>
+            </a>
+    
+            
+            <a href="./img/health6.png"
+                class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md group relative w-80 h-64">
+                <img src="./img/health6.png" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md">
+    
+                <div class="absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold">ကျန်းမာလိုသူတို့ သတိပြုစရာလေးများ</h1>
+                    <p class="mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks 1,500</p>
+                </div>
+            </a>
+    
+         
+            <a href="./img/health7.png"
+                class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md group relative w-80 h-64">
+                <img src="./img/health7.png" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md">
+    
+                <div class="absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold">ကင်ဆာကုထုံး</h1>
+                    <p class="mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks  3,000</p>
+                </div>
+            </a>
+    
+
+            <a href="./img/health8.webp"
+                class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg opacity-90 hover:opacity-100 rounded-md group relative w-80 h-64">
+                <img src="./img/health8.webp" alt=""
+                    class="h-52 object-cover rounded-tl-md rounded-tr-md">
+    
+                <div class="absolute bottom-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                    <h1 class="font-semibold">သက်ရှည်ကျန်းမာနည်းလမ်း ၁၀၀</h1>
+                    <p class="mt-5 px-8 py-3 rounded-full bg-white-400 hover:bg-amber-600 duration-300 font-semibold">Ks  5,500</p>
+                </div>
+            </a>
+    
+        </div>
+    </div>
+    <form action="" class="text-xl text-red-600 ml-12 bg-gray-200">
+        <input type="checkbox" >အဖြေရှာရခက်တဲ့ပုစ္ဆာ<br> Ks 4,000<br>
+        <input type="checkbox" >အော်တစ်ဇင်<br> Ks 3,000<br>
+        <input type="checkbox">ကိုယ်စိတ်ကျန်းမာသင့်ခန္ဓာ<br> Ks 4,500 <br>
+        <input type="checkbox" >ဆယ်ကျော်သက်တို့အကြောင်း<br> Ks 1,200<br>
+        <input type="checkbox" >အဖြစ်များသော ကင်ဆာရောဂါများ<br>Ks 2,000 <br>
+        <input type="checkbox" >ကျန်းမာလိုသူတို့ သတိပြုစရာလေးများ<br>Ks 1,500 <br>
+        <input type="checkbox" >ကင်ဆာကုထုံး<br> Ks 3,000<br>
+        <input type="checkbox" >သက်ရှည်ကျန်းမာနည်းလမ်း ၁၀၀<br> Ks 5,500<br>
+    </form>
+
+    <a href="./order.html"><p onclick="buttonHandler()" title="Contact Sale"
+        class="fixed z-90  bottom-3/4  top-1/3 mt-12 md:right-8  bg-blue-400 md:w-24 sm:w-8 h-9  drop-shadow-lg flex justify-center items-center text-w text-xl hover:bg-blue-600 hover:drop-shadow-2xl hover:animate-bounce duration-300  md:ml-0 ml-64   mx-auto"  >Order</p></a>
+ 
+       <div class="py-10  px-5 md:px-0 bg-gray-500 mt-12">
+        <div class="container mx-auto">
+            <div class="lg:w-10/12  md:11/12 w-full mx-auto">
+                <div class="md:flex block">
+                    <div class="flex-grow">
+                        <p class="font-bold text-white-500 ">You can order from Online</p>
+                        <input type="radio" name="order"class=" font-bold text-white-600">Cash on Delivery <br>
+                        <input type="radio" name="order"class=" font-bold text-white-600">Payment Delivery <br>
+                        <p class="font-bold text-white-500 mt-5">Shop Location:</p>
+                        <p class="font-bold text-white-500 ">Between 69*70th Sts</p>
+                        <p class="font-bold text-white-500 ">Between 40*41th Sts</p>
+                        <p class="font-bold text-white-500 ">Mahar Aung Myay Township</p>
+                        <p class="font-bold text-white-500 ">Open:9AM to 9PM</p>
+                        
+                        
+                    </div>
+                    
+                    <div class="block">
+                        <p class="mt-5 font-bold text-white-500">You can connect me</p>
+                    <a class="underline underline-offset-0 text-white-900 font-bold" href="">Facebook</a> <br>
+                    <a class="underline underline-offset-0 text-white-900 font-bold" href="">Instragram</a> <br>
+                    <a class="underline underline-offset-0 text-white-900 font-bold" href="">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./jquery.js"></script>
+    <script src="./Health.js"></script>
+</body>
+</html>
